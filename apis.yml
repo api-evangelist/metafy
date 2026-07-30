@@ -1,8 +1,26 @@
 aid: metafy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/metafy.png
 name: Metafy
-description: 'Metafy is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Metafy is a consumer marketplace for gaming coaching and mentorship,
+  connecting players with expert coaches and professional gamers for
+  personalized one-on-one lessons, VOD reviews, and guides across popular
+  competitive titles. Metafy operates a consumer web platform at metafy.gg and,
+  as of this enrichment pass, publishes no public developer API, developer
+  portal, or API documentation; the only machine-discoverable surface found was
+  an RFC 9116 /.well-known/security.txt security contact. Surfaced as a
+  portfolio company of dcm-ventures.
 url: https://raw.githubusercontent.com/api-evangelist/metafy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Gaming
+- Coaching
+- Esports
+- Marketplace
+- Mentorship
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/metafy-vulnerability-disclosure.yml
+- type: Security
+  url: security/metafy-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/metafy-domain-security.yml
 - type: Website
   url: https://metafy.gg/
+- type: SecurityTxt
+  url: well-known/metafy-security.txt
+- type: WellKnown
+  url: well-known/metafy-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
