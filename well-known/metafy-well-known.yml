@@ -1,0 +1,14 @@
+generated: '2026-07-20'
+method: searched
+source: https://metafy.gg/.well-known/
+host: https://metafy.gg
+notes: >-
+  Metafy operates a consumer web platform only; no API host (api.metafy.gg) or
+  docs host (docs.metafy.gg) resolves in DNS. The only machine-discoverable
+  well-known document found was an RFC 9116 security.txt.
+documents:
+  - path: /.well-known/security.txt          # RFC 9116
+    status: 200
+    file: metafy-security.txt
+  - path: /.well-known/openid-configuration   # OIDC discovery
+    status: 404
